@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>jquery.betterFancybox.js</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.css">
+
+</head>
+
+<body>
+
+  <main class="main" role="main">
+
+
+
+
+
+    <!-- Close buttons -->
+
+    <!-- `.js-fancybox-close` is the default close button -->
+    <script class="js-fancybox-close" type="text/template">
+      <button class="font-size--up-5 position-absolute position-top large--position-top-negative--down-1 position-right large--position-right-negative--down-1 margin--none box-secondary border--none text-inverted js-fancybox-close-btn" type="button">
+        X
+      </button>
+    </script>
+
+    <!-- Any other custom close buttons can go here -->
+    <script class="js-fancybox-close-custom" type="text/template">
+      <button class="font-size--0 position-absolute position-top large--position-top-negative--down-1 position-right large--position-right-negative--down-1 margin--none box-secondary border--none text-inverted js-fancybox-close-btn" type="button">
+        X
+      </button>
+    </script>
+
+    <!-- /Close buttons -->
+
+
+    <div class="container padding-top-bottom--up-2">
+      <h1 class="text-center font-size--up-2 large--font-size--up-5">
+        jquery.betterFancybox.js
+      </h1>
+
+      <h2 class="text-center large--font-size--up-2">
+        Images
+      </h2>
+
+      <ul class="list-inline text-center font-size--down-1">
+        <li class="margin-bottom--0">
+          <a class="inline-block padding--0 box-primary text-inverted font-bold text-caps js-better-fancybox" href="img/sample-1.jpg" rel="group-1" data-options='{
+            "innerClass": "max-width--500",
+            "innerInnerClass": "max-height--90vh",
+            "closeBtn": ".js-fancybox-close-custom"
+          }'>
+            Image group 1: Image 1
+          </a>
+        </li>
+
+        <li class="margin-bottom--0">
+          <a class="inline-block padding--0 box-primary text-inverted font-bold text-caps js-better-fancybox" href="img/sample-2.jpg" rel="group-1" data-options='{
+            "innerClass": "max-width--500",
+            "innerInnerClass": "max-height--90vh",
+            "closeBtn": false
+          }'>
+            Image group 1: Image 2
+          </a>
+        </li>
+      </ul>
+
+      <ul class="list-inline text-center font-size--down-1">
+        <li class="margin-bottom--0">
+          <a class="inline-block padding--0 box-primary text-inverted font-bold text-caps js-better-fancybox" href="img/sample-3.jpg" rel="group-2" data-options='{
+            "innerClass": "max-width--500",
+            "innerInnerClass": "max-height--90vh"
+          }'>
+            Image group 2: Image 1
+          </a>
+        </li>
+
+        <li class="margin-bottom--0">
+          <a class="inline-block padding--0 box-primary text-inverted font-bold text-caps js-better-fancybox" href="img/sample-4.jpg" rel="group-2" data-options='{
+            "innerClass": "max-width--500",
+            "innerInnerClass": "max-height--90vh"
+          }'>
+            Image group 2: Image 2
+          </a>
+        </li>
+      </ul>
+
+      <hr />
+
+      <h2 class="text-center large--font-size--up-2">
+        Other Content
+      </h2>
+
+      <ul class="list-inline text-center font-size--down-1">
+        <li class="margin-bottom--0">
+          <a class="inline-block padding--0 box-primary text-inverted font-bold text-caps js-better-fancybox-open" href="#" id="deep-link-test" data-options='{
+            "type": "inline",
+            "href": "#inline-short",
+            "innerClass": "max-width--500",
+            "innerInnerClass": "small--height--100vh medium--max-height--90vh large--max-height--90vh padding--up-1 box-primary",
+            "deepLink": true
+          }'>
+            Inline (Short)
+          </a>
+
+          <div id="inline-short" style="display: none;">
+            Not much content here.
+          </div>
+        </li>
+
+        <li class="margin-bottom--0">
+          <a class="inline-block padding--0 box-primary text-inverted font-bold text-caps js-better-fancybox-open" href="#" data-options='{
+            "type": "inline",
+            "href": "#inline-long",
+            "innerClass": "max-width--500",
+            "innerInnerClass": "small--height--100vh medium--max-height--90vh large--max-height--90vh padding--up-1 box-primary"
+          }'>
+            Inline (Long)
+          </a>
+
+          <div id="inline-long" style="display: none;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius sagittis arcu, non malesuada justo rhoncus non. Aenean sem magna, convallis a iaculis at, ornare non risus. Ut venenatis sagittis tellus, ut tempus ligula porttitor facilisis. Proin at pharetra erat. Quisque ut dictum tellus, non ornare quam. Aliquam id odio sit amet augue eleifend sollicitudin. Vivamus nisi sapien, placerat aliquet ultricies sed, rhoncus ac tellus. Nulla vitae mauris eu est pretium scelerisque. Curabitur lacinia laoreet lacus, non faucibus odio. Proin suscipit blandit diam vitae tincidunt. Nulla gravida, est et auctor tincidunt, odio tortor eleifend velit, in congue dolor justo eget sem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam vel tellus urna. Nullam varius faucibus ipsum, sit amet luctus arcu laoreet at. Fusce sodales nisi eget odio maximus eleifend.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius sagittis arcu, non malesuada justo rhoncus non. Aenean sem magna, convallis a iaculis at, ornare non risus. Ut venenatis sagittis tellus, ut tempus ligula porttitor facilisis. Proin at pharetra erat. Quisque ut dictum tellus, non ornare quam. Aliquam id odio sit amet augue eleifend sollicitudin. Vivamus nisi sapien, placerat aliquet ultricies sed, rhoncus ac tellus. Nulla vitae mauris eu est pretium scelerisque. Curabitur lacinia laoreet lacus, non faucibus odio. Proin suscipit blandit diam vitae tincidunt. Nulla gravida, est et auctor tincidunt, odio tortor eleifend velit, in congue dolor justo eget sem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam vel tellus urna. Nullam varius faucibus ipsum, sit amet luctus arcu laoreet at. Fusce sodales nisi eget odio maximus eleifend.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius sagittis arcu, non malesuada justo rhoncus non. Aenean sem magna, convallis a iaculis at, ornare non risus. Ut venenatis sagittis tellus, ut tempus ligula porttitor facilisis. Proin at pharetra erat. Quisque ut dictum tellus, non ornare quam. Aliquam id odio sit amet augue eleifend sollicitudin. Vivamus nisi sapien, placerat aliquet ultricies sed, rhoncus ac tellus. Nulla vitae mauris eu est pretium scelerisque. Curabitur lacinia laoreet lacus, non faucibus odio. Proin suscipit blandit diam vitae tincidunt. Nulla gravida, est et auctor tincidunt, odio tortor eleifend velit, in congue dolor justo eget sem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam vel tellus urna. Nullam varius faucibus ipsum, sit amet luctus arcu laoreet at. Fusce sodales nisi eget odio maximus eleifend.</p>
+          </div>
+        </li>
+
+        <li class="margin-bottom--0">
+          <a class="inline-block padding--0 box-primary text-inverted font-bold text-caps js-better-fancybox-open" href="#" data-options='{
+            "type": "ajax",
+            "href": "about.html #all",
+            "innerClass": "max-width--500",
+            "innerInnerClass": "small--height--100vh medium--max-height--90vh large--max-height--90vh padding--up-1 box-primary"
+          }'>
+            Ajax
+          </a>
+        </li>
+
+        <li class="margin-bottom--0">
+          <a class="inline-block padding--0 box-primary text-inverted font-bold text-caps js-better-fancybox-open" href="#" data-options='{
+            "type": "iframe",
+            "href": "about.html",
+            "innerClass": "max-width--500",
+            "innerInnerClass": "small--height--100vh medium--max-height--90vh large--max-height--90vh padding--up-1 box-primary"
+          }'>
+            Iframe
+          </a>
+        </li>
+      </ul>
+
+      <hr />
+
+      <h2 class="text-center large--font-size--up-2">
+        Videos
+      </h2>
+
+      <ul class="list-inline text-center font-size--down-1">
+        <li class="margin-bottom--0">
+          <a class="inline-block padding--0 box-primary text-inverted font-bold text-caps js-better-fancybox-open" href="#" data-options='{
+            "type": "inline",
+            "href": "#youtube-video",
+            "outerClass": "medium--padding-left-right--0! large--padding-left-right--0!",
+            "innerClass": "max-width--1000",
+            "innerInnerClass": "medium--max-height--90vh large--max-height--90vh box-default"
+          }'>
+            YouTube
+          </a>
+
+          <script id="youtube-video" type="text/template">
+            <div class="video-container box-ratio--1-1 medium--box-ratio--16-9 large--box-ratio--16-9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/3f7l-Z4NF70" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </script>
+        </li>
+
+        <li class="margin-bottom--0">
+          <a class="inline-block padding--0 box-primary text-inverted font-bold text-caps js-better-fancybox-open" href="#" id="vimeo-deep-link" data-options='{
+            "type": "inline",
+            "href": "#vimeo-video",
+            "innerClass": "max-width--500",
+            "innerInnerClass": "medium--max-height--90vh large--max-height--90vh box-default",
+            "deepLink": true
+          }'>
+            Vimeo
+          </a>
+
+          <script id="vimeo-video" type="text/template">
+            <div class="video-container box-ratio--16-9">
+              <iframe src="https://player.vimeo.com/video/6370469" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </script>
+        </li>
+
+        <li class="margin-bottom--0">
+          <a class="inline-block padding--0 box-primary text-inverted font-bold text-caps js-better-fancybox-open" href="#" data-options='{
+            "type": "inline",
+            "href": "#dailymotion-video",
+            "innerClass": "max-width--500",
+            "innerInnerClass": "medium--max-height--90vh large--max-height--90vh box-default"
+          }'>
+            Dailymotion
+          </a>
+
+          <script id="dailymotion-video" type="text/template">
+            <div class="video-container box-ratio--16-9">
+              <iframe frameborder="0" width="480" height="270" src="//www.dailymotion.com/embed/video/x2p0ate" allowfullscreen></iframe>
+            </div>
+          </script>
+        </li>
+
+        <li class="margin-bottom--0">
+          <a class="inline-block padding--0 box-primary text-inverted font-bold text-caps js-better-fancybox-open" href="#" data-options='{
+            "type": "inline",
+            "href": "#daily-mail-video",
+            "innerClass": "max-width--500",
+            "innerInnerClass": "medium--max-height--90vh large--max-height--90vh box-default"
+          }'>
+            Daily Mail
+          </a>
+
+          <script id="daily-mail-video" type="text/template">
+            <div class="video-container box-ratio--1-1">
+              <iframe allowfullscreen frameborder="0" width="698" height="573" scrolling="no" id="molvideoplayer" title="MailOnline Embed Player" src="http://www.dailymail.co.uk/embed/video/1286993.html"></iframe>
+            </div>
+          </script>
+        </li>
+
+        <li class="margin-bottom--0">
+          <a class="inline-block padding--0 box-primary text-inverted font-bold text-caps js-better-fancybox-open" href="#" data-options='{
+            "type": "inline",
+            "href": "#worldstar-hiphop-video",
+            "innerClass": "max-width--500",
+            "innerInnerClass": "medium--max-height--90vh large--max-height--90vh box-default"
+          }'>
+            Worldstar Hiphop
+          </a>
+
+          <script id="worldstar-hiphop-video" type="text/template">
+            <div class="video-container box-ratio--16-9">
+              <iframe width="640" height="360" src="http://www.worldstarhiphop.com/embed/93728" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </script>
+        </li>
+
+        <li class="margin-bottom--0">
+          <a class="inline-block padding--0 box-primary text-inverted font-bold text-caps js-better-fancybox-open" href="#" data-options='{
+            "type": "inline",
+            "href": "#fox-5-video",
+            "innerClass": "max-width--500",
+            "innerInnerClass": "medium--max-height--90vh large--max-height--90vh box-default"
+          }'>
+            Fox 5
+          </a>
+
+          <script id="fox-5-video" type="text/template">
+            <div class="video-container box-ratio--16-9">
+              <iframe scrolling="no" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen src="http://up.anv.bz/latest/anvload.html?key=eyJtIjoiZXBmb3giLCJwIjoiZGVmYXVsdCIsInYiOiIyNTc0NzgiLCJwbHVnaW5zIjp7ImRmcCI6eyJjbGllbnRTaWRlIjp7ImFkVGFnVXJsIjoiaHR0cDovL3B1YmFkcy5nLmRvdWJsZWNsaWNrLm5ldC9nYW1wYWQvYWRzP3N6PTY0MHg0ODAmaXU9LzYzNzkwNTY0L3dueXcvbmV3cyZjaXVfc3pzPTMwMHgyNTAmaW1wbD1zJmdkZnBfcmVxPTEmZW52PXZwJm91dHB1dD12YXN0JnZwb3M9cHJlcm9sbCZ1bnZpZXdlZF9wb3NpdGlvbl9zdGFydD0xJnVybD1bcmVmZXJyZXJfdXJsXSZjb3JyZWxhdG9yPVt0aW1lc3RhbXBdJmRlc2NyaXB0aW9uX3VybD1odHRwJTNBJTJGJTJGd3d3LmZveDVueS5jb20lMkZuZXdzJTJGMTE0MTI4MjQ3LXN0b3J5In19fSwiYW52YWNrIjoiYW52YXRvX2VwZm94X2FwcF93ZWJfcHJvZF9iMzM3MzE2OGUxMmY0MjNmNDE1MDRmMjA3MDAwMTg4ZGFmODgyNTFiIn0"  width ="640" height="360"></iframe>
+            </div>
+          </script>
+        </li>
+
+        <li class="margin-bottom--0">
+          <a class="inline-block padding--0 box-primary text-inverted font-bold text-caps js-better-fancybox-open" href="#" data-options='{
+            "type": "inline",
+            "href": "#fox-business-video",
+            "innerClass": "max-width--500",
+            "innerInnerClass": "medium--max-height--90vh large--max-height--90vh box-default"
+          }'>
+            Fox Business
+          </a>
+
+          <div id="fox-business-video" style="display: none;">
+            <div class="video-container box-ratio--16-9">
+              <script type="text/javascript" src="http://video.foxbusiness.com/v/embed.js?id=3352966761001&w=466&h=263"></script>
+            </div>
+          </div>
+        </li>
+
+        <li class="margin-bottom--0">
+          <a class="inline-block padding--0 box-primary text-inverted font-bold text-caps js-better-fancybox-open" href="#" data-options='{
+            "type": "inline",
+            "href": "#bloomberg-video",
+            "innerClass": "max-width--500",
+            "innerInnerClass": "medium--max-height--90vh large--max-height--90vh box-default"
+          }'>
+            Bloomberg
+          </a>
+
+          <script id="bloomberg-video" type="text/template">
+            <div class="video-container box-ratio--16-9">
+              <iframe src="http://www.bloomberg.com/api/embed/iframe?id=IwFy7AXsRgylbbTqPKHZHQ" allowscriptaccess="always" frameborder="0"></iframe>
+            </div>
+          </script>
+        </li>
+
+        <li class="margin-bottom--0">
+          <a class="inline-block padding--0 box-primary text-inverted font-bold text-caps js-better-fancybox-open" href="#" data-options='{
+            "type": "inline",
+            "href": "#yahoo-video",
+            "innerClass": "max-width--500",
+            "innerInnerClass": "medium--max-height--90vh large--max-height--90vh box-default"
+          }'>
+            Yahoo
+          </a>
+
+          <script id="yahoo-video" type="text/template">
+            <div class="video-container box-ratio--16-9">
+              <iframe width='640' height='360' scrolling='no' frameborder='0' src='http://finance.yahoo.com/video/petite-menswear-peter-manning-creating-191247888.html?format=embed' allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true' allowtransparency='true'></iframe>
+            </div>
+          </script>
+        </li>
+
+        <li class="margin-bottom--0">
+          <a class="inline-block padding--0 box-primary text-inverted font-bold text-caps js-better-fancybox-open" href="#" data-options='{
+            "type": "inline",
+            "href": "#instagram-post",
+            "innerClass": "max-width--500",
+            "innerInnerClass": "medium--max-height--90vh large--max-height--90vh box-default"
+          }'>
+            Instagram
+          </a>
+
+          <script id="instagram-post" type="text/template">
+            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="6" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BEqu-dnBQQn/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Today’s #WeeklyFluff is for those who shower love on shibas. Meet Fricko (@umigiva): a snuggle-loving Swedish shiba inu with a streak of fun-loving mischievousness. If your feed is in need of some inu inundation, follow @umigiva.</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A video posted by Instagram (@instagram) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-04-26T15:00:24+00:00">Apr 26, 2016 at 8:00am PDT</time></p></div></blockquote><script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+          </script>
+        </li>
+      </ul>
+
+      <hr />
+
+      <p>HTML Options:</p>
+
+      <ul>
+        <li>href (string)</li>
+        <li>type (string)</li>
+        <li>content (string)</li>
+        <li>title (string)</li>
+        <li>closeBtn (string)</li>
+        <li>class (string)</li>
+        <li>skinClass (string)</li>
+        <li>outerClass (string)</li>
+        <li>innerClass (string)</li>
+        <li>innerInnerClass (string)</li>
+        <li>overlayClass (string)</li>
+        <li>titleClass (string)</li>
+        <li>deepLink (boolean)</li>
+      </ul>
+
+      <p>JS options:</p>
+
+      <ul>
+        <li>ajax (object)</li>
+        <li>iframe (object)</li>
+        <li>helpers (object)</li>
+        <li>beforeShow (function)</li>
+        <li>afterShow (function)</li>
+
+        <li>href (string)</li>
+        <li>type (string)</li>
+        <li>content (string)</li>
+        <li>title (string)</li>
+        <li>closeBtn (string)</li>
+        <li>class (string)</li>
+        <li>skinClass (string)</li>
+        <li>outerClass (string)</li>
+        <li>innerClass (string)</li>
+        <li>innerInnerClass (string)</li>
+        <li>overlayClass (string)</li>
+        <li>titleClass (string)</li>
+        <li>deepLink (boolean)</li>
+      </ul>
+
+      <p>Usage:</p>
+
+      <ul>
+        <li>
+          <pre class="margin--none" style="white-space: normal;"><code>$.betterFancybox.attach( selector, optionsObj );</code></pre>
+        </li>
+
+        <li>
+          <pre class="margin--none" style="white-space: normal;"><code>$.betterFancybox.open( element, optionsObj );</code></pre>
+        </li>
+      </ul>
+    </div>
+
+
+
+
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+  <script src="js/jquery.betterFancybox.js"></script>
+
+  <script src="js/main.js"></script>
+
+  <script src="https://rawgit.com/rodneyrehm/viewport-units-buggyfill/master/viewport-units-buggyfill.js"></script>
+  <script>
+    window.viewportUnitsBuggyfill.init();
+    window.addEventListener( 'resize', viewportUnitsBuggyfill.refresh, true );
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "jquery.betterfancybox.js",
+  "version": "1.0.0",
+  "devDependencies": {
+    "browser-sync": "^2.9.2",
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.0"
+  }
+}
