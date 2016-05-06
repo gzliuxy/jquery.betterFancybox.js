@@ -171,7 +171,7 @@
 
     var getInlineOptions = function ( element ) {
       var options = element.getAttribute('data-options'),
-          options = ( options ? JSON.parse(options) : {} );
+          options = (options) ? JSON.parse(options) : {};
 
       return options;
     }
